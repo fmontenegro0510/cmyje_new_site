@@ -78,7 +78,5 @@
         items: 1,
         dotsData: true,
     });
-
-    
+   
 })(jQuery);
-
