@@ -36,7 +36,7 @@
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
-        <img class="position-absolute top-50 start-50 translate-middle" src="img/logos/chaco_64x64.png" alt="Icon">
+        <img class="position-absolute top-50 start-50 translate-middle" src="img/v1/chaco_64x64.png" alt="Icon">
     </div>
     <!-- Spinner End -->
 
@@ -72,7 +72,7 @@
         <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
             <div class="container-nav">
                 <div class="logo">
-                    <h1 class="text-primary m-0"><img class="me-3" src="img/logos/chaco_64x64.png" alt="Icon"></h1>
+                    <h1 class="text-primary m-0"><img class="me-3" src="img/v1/chaco_64x64.png" alt="Icon"></h1>
                 </div>
                 <div class="leyenda">
                     <h5 class="mb-0"> Consejo de la Magistratura <br> y Jurado de Enjuiciamiento</h5>
@@ -91,9 +91,9 @@
                 <a href="service.html" class="nav-item nav-link">Concursos</a>
                 <a href="service.html" class="nav-item nav-link">Propuestas</a>
                 <a href="service.html" class="nav-item nav-link">Sentencias</a>
-                <div class="nav-item dropdown">
+                <div class="nav-item dropdown" >
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Prensa</a>
-                    <div class="dropdown-menu border-0 m-0">
+                    <div class="dropdown-menu border-0 m-0" id="dropdown_menu_prensa" >
                         <a href="feature.html" class="dropdown-item">Blog de Prensa</a>
                         <a href="project.html" class="dropdown-item">Galeria</a>
                     </div>
@@ -664,11 +664,34 @@
     <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Address</h3>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@example.com</p>
+                <div class="col-lg-4 col-md-6">
+
+                    <img src="img/logos/v1/chaco_64x64.png" alt="" srcset="">
+                    <h3 class="text-light mb-4">Consejo de la Magistratura <br> y Jurado de Enjuiciamiento.</h3>
+                    <p>Órgano Constitucional encargado de proponer el nombramiento, el traslado y la remoción de los magistrados y funcionarios del Poder Judicial de la Provincia del Chaco.</p>
+                    
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <h3 class="text-light mb-4">Sede Central</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>América N° 117 (América y Mitre) - H3502ARC (Resistencia) - Chaco</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+54 (362) 4453908 / 4453883 / 4453960</p>
+                    <p class="mb-2"><i class="fas fa-clock-o text-primary me-3"></i>Lunes a Viernes de 7 a 13 horas</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>consmagchaco@gmail.com</p>
+                    <hr>
+                    <h3 class="text-light mb-4">Sede Administrativa Saenz Peña</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>América N° 117 (América y Mitre) - H3502ARC (Resistencia) - Chaco</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+54 (362) 4453908 / 4453883 / 4453960</p>
+                    <p class="mb-2"><i class="fas fa-clock-o text-primary me-3"></i>Lunes a Viernes de 7 a 13 horas</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>consmagchaco@gmail.com</p>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="text-light mb-4">Memorias</h3>
+                    <a class="btn btn-link" href="">2010-2012</a>
+                    <a class="btn btn-link" href="">2012-2014</a>
+                    <a class="btn btn-link" href="">2014-2016</a>
+                    <a class="btn btn-link" href="">2016-2018</a>
+                    <h3 class="text-light mb-4">Contacto</h3>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
@@ -676,41 +699,16 @@
                         <a class="btn btn-square btn-outline-body me-0" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Services</h3>
-                    <a class="btn btn-link" href="">Architecture</a>
-                    <a class="btn btn-link" href="">3D Animation</a>
-                    <a class="btn btn-link" href="">House Planning</a>
-                    <a class="btn btn-link" href="">Interior Design</a>
-                    <a class="btn btn-link" href="">Construction</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Quick Links</h3>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">Our Services</a>
-                    <a class="btn btn-link" href="">Terms & Condition</a>
-                    <a class="btn btn-link" href="">Support</a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-light mb-4">Newsletter</h3>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                    <div class="position-relative mx-auto" style="max-width: 400px;">
-                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                    </div>
-                </div>
             </div>
         </div>
         <div class="container-fluid copyright">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">Your Site Name</a>, All Right Reserved.
+                    <div class="col-md-10 text-center text-md-start mb-3 mb-md-0">
+                        Dirección General de Tecnología - CMyJE Chaco
                     </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+                    <div class="col-md-2 text-center text-md-end">
+                        &copy; 2023
                     </div>
                 </div>
             </div>
