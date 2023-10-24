@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #B78D65;
+    --primary: #008BD2;
     --light: #F8F8F8;
     --dark: #252525;
 }
@@ -118,7 +118,6 @@ h6,
     padding-left: 0.5rem;
     flex-wrap: wrap;
     font-size: small;
-
 }
 
 
@@ -595,4 +594,30 @@ Custom
     flex:1;
 }
 
+/*
+*Escudo
+*/
+
+.escudo_provincial{
+    height: 30%;
+    width: 20%;
+}
+
+.escudo_provincia_footer {
+    text-align: center;
+}
+
+.leyenda_escudo_provincia{
+    text-align: center; 
+}
+
+
+
+
+
+/**/
+
+
 /*End Custom*/
+
+
