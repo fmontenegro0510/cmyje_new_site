@@ -95,3 +95,5 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
   //var modalTitle = exampleModal.querySelector('.modal-title')
   //modalTitle.textContent = 'Estados de Concursos'
  });
+
+
