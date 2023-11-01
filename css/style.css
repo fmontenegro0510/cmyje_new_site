@@ -647,3 +647,34 @@ Custom
 /*End Custom*/
 
 
+
+/*
+Audio container
+*/
+
+#audio-container {
+    /* display: none; */
+}
+
+#progress-container {
+    width: 50%;
+    margin: 20px auto;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f3f3f3;
+}
+
+#progress {
+    height: 100%;
+    width: 0;
+    background-color: #008BD2;
+}
+
+/*
+End Audio Container
+*/
+
+

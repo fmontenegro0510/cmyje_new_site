@@ -97,3 +97,52 @@ exampleModal.addEventListener('show.bs.modal', function (event) {
  });
 
 
+ var pdfViewer = document.getElementById('pdf-viewer');
+ var audioContainer = document.getElementById('audio-container');
+ var audio = document.getElementById('audio');
+
+ function loadPDF() {
+     pdfViewer.innerHTML = '<embed src="./media/24B/L.24.B.pdf" type="application/pdf" width="100%" height="100%">';
+ }
+
+ function closePDF() {
+     pdfViewer.innerHTML = '';
+     //audioContainer.style.display = 'none';
+ }
+
+ function playAudio() {
+     audioContainer.style.display = 'block';
+     audio.play();
+ }
+
+ function pauseAudio() {
+     audio.pause();
+ }
+
+ function stopAudio() {
+     audio.pause();
+     audio.currentTime = 0;
+    //  audioContainer.style.display = 'none';
+ }
+ function openLinkInNewTab() {
+    window.open('https://digesto.legislaturachaco.gob.ar/Documentos/Ley/VistaPublicaLey/756', '_blank'); 
+}
+
+
+var progressBar = document.getElementById('progress');
+var durationDisplay = document.getElementById('duration');
+
+function updatePAudio() {
+    var percent = (audio.currentTime / audio.duration) * 100;
+    progressBar.style.width = percent + '%';
+    durationDisplay.textContent = formatTime(audio.currentTime) + ' / ' + formatTime(audio.duration);
+}
+
+function formatTime(seconds) {
+    var minutes = Math.floor(seconds / 60);
+    var secs = Math.floor(seconds % 60);
+    if (secs < 10) {
+        secs = '0' + secs;
+    }
+    return minutes + ':' + secs;
+}
