@@ -146,3 +146,15 @@ function formatTime(seconds) {
     }
     return minutes + ':' + secs;
 }
+
+
+/**
+ * tabs
+ */
+
+$(function () {
+    $('#myTab li:last-child a').tab('show')
+  })
+
+
+/*en tabs*/
