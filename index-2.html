@@ -35,6 +35,11 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+
+    <!-- table -->
+    <link href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css" rel="stylesheet">
+    <!-- end Table -->
+
 </head>
 
 <body>    
@@ -628,17 +633,7 @@
         </div>
     </div>
 <!-- End Enlaces  -->
-
-
-
-
-
-
-
-
-
-
-
+    
     <!-- Concursos Superior Tribunal de Justicia -->
     <div class="container-xxl py-5">
         <div class="container-xxl">
@@ -647,51 +642,129 @@
                 <h1 class="display-5 mb-4">Juez del Superior Tribunal de Justicia</h1>
             </div>
 
-            <div class="mx-auto mb-5 wow fadeInUp " data-wow-delay="0.1s">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <div class="d-grid gap-2">
-                            <a class="nav-link active">Expte. Nº 523/2013
-                            <button class="btn btn-primary" type="button"  data-bs-toggle="tab" href="#stj1">Expte. Nº 523/2013</button>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="d-grid gap-2">
-                            <a class="nav-link" data-bs-toggle="tab" href="#stj2"  >Expte. Nº 575/2015
-                                <button class="btn btn-primary" type="button" >Expte. Nº 575/2015</button>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="d-grid gap-2">
-                            <a class="nav-link"  data-bs-toggle="tab" href="#stj3">Expte. Nº 787/2020
-                                <button class="btn btn-primary" type="button"  >Expte. Nº 787/2020</button>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <div class="d-grid gap-2">
-                            <a class="nav-link" href="#stj4">Expte. Nº 870/2022
-                                <button class="btn btn-primary" type="button"  data-bs-toggle="tab" href="#stj4">Expte. Nº 870/2022</button>
-                            </a>
-                        </div>
-                    </li>   
-              
-                  </ul>
+            <div class="mx-auto mb-5 wow fadeInUp tabs " data-wow-delay="0.1s">
+                <div class="tab-button-outer">
+                    <ul id="tab-button">
+                      <li><a href="#tab01">Expte. Nº 523/2013</a></li>
+                      <li><a href="#tab02">Expte. Nº 575/2015</a></li>
+                      <li><a href="#tab03">Expte. Nº 787/2020</a></li>
+                      <li><a href="#tab04">Expte. Nº 870/2022</a></li>
+                    </ul>
+                  </div>
+                  <div class="tab-select-outer">
+                    <select id="tab-select">
+                      <option value="#tab01">Expte. Nº 523/2013</option>
+                      <option value="#tab02">Expte. Nº 575/2015</option>
+                      <option value="#tab03">Expte. Nº 787/2020</option>
+                      <option value="#tab04">Expte. Nº 870/2022</option>
+                    </select>
+                  </div>
+
+                  <div id="tab01" class="tab-contents">
+                    <!-- Expte. Nº 523/2013 -->
+                    <h2 class="text-center">Cronología de eventos</h2>
+                    <hr>
+                    <p>Posición institucional respecto a la selección de los Miembros del Superior Tribunal de Justicia y Procurador General. El testimonio se encuentra disponible <a href="#">aquí.</a></p>
+                    <p class="text-end fst-italic">Miércoles, 05 de Diciembre de 2012</p>
+                    <hr>
+                    <p>Publicación de lista definitiva de los postulantes con sus respectivos puntajes. Luego de esta etapa, de evaluación de antecedentes, se continuará de la siguiente manera: se aprobará el Programa y se fijará una fecha para el examen propiamente de oposición. La resolución se encuentra disponible <a href="#">aquí.</a></p>
+                    <p class="text-end fst-italic">Miércoles, 16 de Octubre de 2013</p>
+                    <hr>
+                    <!-- fin Expte. Nº 523/2013 -->
+                  </div>
+                  <div id="tab02" class="tab-contents">
+                    <h2 class="text-center">Cronología de eventos</h2>
+                    <hr>
+                  </div>
+                  <div id="tab03" class="tab-contents">
+                    <h2 class="text-center">Cronología de eventos</h2>
+                    <hr>
+                  </div>
+                  <div id="tab04" class="tab-contents">
+                    <h2 class="text-center">Cronología de eventos</h2>
+                    <hr>
+                  </div>
             </div>
             <br>
             <!-- Tab panes -->
-            <div class="tab-content ">
-                <div class="tab-pane container active" id="stj1">1</div>
-                <div class="tab-pane container fade" id="stj2">2</div>
-                <div class="tab-pane container fade" id="stj3">3</div>
-                <div class="tab-pane container fade" id="stj4">4</div>
-            </div>
         </div>
     </div>
     <!-- End Concursos Superior Tribunal de Justicia -->
 
+
+
+    <!-- Constitucion Provincial -->
+    <div class="container-xxl py-5">
+        <div class="container-xxl">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                <h4 class="section-title">Concursos</h4>
+                <h1 class="display-5 mb-4">Juez del Superior Tribunal de Justicia</h1>
+            </div>
+            <div class="mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="tab-button-outer tab-button">
+                    <!-- Expte. Nº 523/2013 -->
+                    <h2 class="text-center">Cronología de eventos</h2>
+                    <hr>
+                    <p>Posición institucional respecto a la selección de los Miembros del Superior Tribunal de Justicia y
+                        Procurador General. El testimonio se encuentra disponible <a href="#">aquí.</a></p>
+                    <p class="text-end fst-italic">Miércoles, 05 de Diciembre de 2012</p>
+                    <hr>
+                    <p>Publicación de lista definitiva de los postulantes con sus respectivos puntajes. Luego de esta etapa,
+                        de evaluación de antecedentes, se continuará de la siguiente manera: se aprobará el Programa y se
+                        fijará una fecha para el examen propiamente de oposición. La resolución se encuentra disponible <a
+                            href="#">aquí.</a></p>
+                    <p class="text-end fst-italic">Miércoles, 16 de Octubre de 2013</p>
+                    <hr>
+                    <!-- fin Expte. Nº 523/2013 -->
+                </div>
+            </div>
+            <!-- Tab panes -->
+        </div>
+    </div>
+
+    <!-- End Constitucion Provincial -->
+
+
+
+
+    <!-- Programas -->
+
+        <div class="container-xxl py-5">
+            <div class="container-xxl">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h4 class="section-title">Programas</h4>
+                    <h1 class="display-5 mb-4">Listado de todos los Programas que fueron concursados</h1>
+                </div>
+                <div class="mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                          <table
+                            id="table"
+                            data-toggle="table"
+                            data-height="15rem"
+                            data-show-refresh="true"
+                            data-show-columns="true"
+                            data-show-fullscreen="false"
+                            data-search="true"
+                            data-pagination="true"
+                            data-locale="es-Ar"
+                            data-buttons-class="primary"
+                            data-url="./json/data1.json">
+                            <thead>
+                              <tr>
+                                <th data-field="id">ID</th>
+                                <th data-field="name">Item Name</th>
+                                <th data-field="price">Item Price</th>
+                              </tr>
+                            </thead>
+                          </table>
+                        
+                        <!-- fin Expte. Nº 523/2013 -->
+
+                </div>
+                <!-- Tab panes -->
+            </div>
+        </div>
+    
+    <!--  End Programas -->
 
 
 <!-- Modal -->
@@ -852,6 +925,15 @@ Estad
    
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/tabs.js"></script>
+
+    <!-- js\table.js -->
+    <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table-locale-all.min.js"></script>
+    <script src="js/table.js"></script>
+
+    <!-- end js\table.js -->
+
 </body>
 
 </html>
