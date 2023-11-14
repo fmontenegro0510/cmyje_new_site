@@ -945,3 +945,19 @@ End Audio Container
 
 /* end tabs */
   
+
+.img_enlace{
+    width: 100%;
+}
+
+.img_enlace_unne{
+    width: 50%;
+}
+
+.img_enlace_container{
+    place-items: center;
+}
+
+.constitucion{
+    text-align: justify;
+}
